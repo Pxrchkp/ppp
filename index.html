@@ -28,7 +28,6 @@
   :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
   .wrap{max-width:880px;margin:0 auto;padding:32px 20px 64px}
 
-  /* ส่วนหัว */
   header{
     display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center;
     padding:32px 0 28px;border-bottom:2px solid var(--line);
@@ -36,13 +35,11 @@
   .avatar{
     width:150px;height:150px;border-radius:50%;object-fit:cover;
     background:var(--accent-soft);border:4px solid var(--accent);
-    display:grid;place-items:center;font-size:3rem;font-weight:800;color:var(--accent);
   }
   h1{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:800;line-height:1.2}
   .role{color:var(--accent);font-weight:600;font-size:1.1rem;margin:6px 0 10px}
   .bio{color:var(--muted);max-width:60ch}
 
-  /* ปุ่มติดต่อ */
   .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
   .links a{
     text-decoration:none;font-weight:600;font-size:.95rem;
@@ -82,14 +79,12 @@
 <body>
 <div class="wrap">
 
-  <!-- ส่วนหัว: แก้ชื่อ ตำแหน่ง และคำแนะนำตัว -->
   <header>
-    <!-- ใส่รูปจริง: <img class="avatar" src="photo.jpg" alt="รูปโปรไฟล์"> -->
-    <div class="avatar" aria-hidden="true">ชน</div>
+    <img class="avatar" src="images.jpg" alt="รูปโปรไฟล์ของ จักรพันธ์ ค่ำคูณ">
     <div>
       <h1>จักรพันธ์ ค่ำคูณ</h1>
       <p class="role">นักพัฒนาเว็บ / นักศึกษา / อาชีพของคุณ</p>
-      <p class="bio">Test จักรพันธ์</p>
+      <p class="bio">เขียนแนะนำตัวสั้น ๆ 2–3 บรรทัด เช่น สิ่งที่คุณทำ สิ่งที่คุณสนใจ และเป้าหมายของคุณ</p>
       <nav class="links" aria-label="ช่องทางติดต่อ">
         <a href="mailto:you@example.com">อีเมล</a>
         <a href="https://github.com/ชื่อผู้ใช้" target="_blank" rel="noopener">GitHub</a>
@@ -99,15 +94,13 @@
     </div>
   </header>
 
-  <!-- เกี่ยวกับฉัน -->
   <section id="about">
     <h2>เกี่ยวกับฉัน</h2>
     <div class="card">
-      <p>จบแน่แก้ก่อน</p>
+      <p>เล่าประวัติโดยย่อของคุณที่นี่ เช่น ที่อยู่ ความสนใจ งานอดิเรก หรือสิ่งที่ทำให้คุณแตกต่าง</p>
     </div>
   </section>
 
-  <!-- ทักษะ -->
   <section id="skills">
     <h2>ทักษะ</h2>
     <ul class="skills">
@@ -119,33 +112,31 @@
     </ul>
   </section>
 
-  <!-- ประสบการณ์ / การศึกษา -->
   <section id="experience">
-    <h2>เกือบได้แปลงร่างเป็นกระหัง</h2>
+    <h2>ประสบการณ์และการศึกษา</h2>
     <div class="card">
-      <h3>ต่ำกว่าคุณครู</h3>
+      <h3>ตำแหน่งงาน หรือ ชื่อหลักสูตร</h3>
       <p class="meta">ชื่อบริษัท / สถาบัน · 2023 – ปัจจุบัน</p>
-      <p>ได้เป็นตัวสีฟ้า</p>
+      <p>อธิบายสิ่งที่คุณทำและผลลัพธ์ที่ได้</p>
     </div>
     <div class="card">
       <h3>ตำแหน่งงาน หรือ ชื่อหลักสูตร</h3>
       <p class="meta">ชื่อบริษัท / สถาบัน · 2020 – 2023</p>
-      <p>จิ้งจกเดินได้</p>
+      <p>อธิบายสิ่งที่คุณทำและผลลัพธ์ที่ได้</p>
     </div>
   </section>
 
-  <!-- ผลงาน -->
   <section id="projects">
     <h2>ผลงาน</h2>
     <div class="grid">
       <div class="card">
         <h3>ชื่อโปรเจกต์ 1</h3>
-        <p>จะแปลงร่างไปกอบกู้วิลับเทคนิคนางรอง</p>
+        <p>อธิบายสั้น ๆ ว่าโปรเจกต์นี้ทำอะไร</p>
         <p><a href="https://github.com/ชื่อผู้ใช้/โปรเจกต์1" target="_blank" rel="noopener">ดูโค้ด</a></p>
       </div>
       <div class="card">
         <h3>ชื่อโปรเจกต์ 2</h3>
-        <p>กินแตงโมแต่ลืมเคี้ยว</p>
+        <p>อธิบายสั้น ๆ ว่าโปรเจกต์นี้ทำอะไร</p>
         <p><a href="https://github.com/ชื่อผู้ใช้/โปรเจกต์2" target="_blank" rel="noopener">ดูโค้ด</a></p>
       </div>
     </div>

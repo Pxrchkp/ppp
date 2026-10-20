@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>โปรไฟล์ของฉัน | จักรพันธ์ ค่ำคูณ</title>
+<meta name="description" content="โปรไฟล์อิเล็กทรอนิกส์ของ จักรพันธ์ ค่ำคูณ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f3f6f4; --card:#ffffff; --ink:#1d2b26; --muted:#5d6e67;
+    --accent:#0f766e; --accent-soft:#d5ece8; --line:#d9e2de;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f1815; --card:#16231f; --ink:#e8f1ed; --muted:#9db0a8;
+      --accent:#4fd1c0; --accent-soft:#1b3a35; --line:#26372f;
+    }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Noto Sans Thai",system-ui,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.7;
+  }
+  a{color:var(--accent)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 20px 64px}
+
+  /* ส่วนหัว */
+  header{
+    display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center;
+    padding:32px 0 28px;border-bottom:2px solid var(--line);
+  }
+  .avatar{
+    width:150px;height:150px;border-radius:50%;object-fit:cover;
+    background:var(--accent-soft);border:4px solid var(--accent);
+    display:grid;place-items:center;font-size:3rem;font-weight:800;color:var(--accent);
+  }
+  h1{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:800;line-height:1.2}
+  .role{color:var(--accent);font-weight:600;font-size:1.1rem;margin:6px 0 10px}
+  .bio{color:var(--muted);max-width:60ch}
+
+  /* ปุ่มติดต่อ */
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .links a{
+    text-decoration:none;font-weight:600;font-size:.95rem;
+    padding:8px 16px;border-radius:999px;
+    border:1.5px solid var(--accent);color:var(--accent);
+    transition:background .2s,color .2s;
+  }
+  .links a:hover{background:var(--accent);color:var(--bg)}
+
+  section{margin-top:40px}
+  h2{font-size:1.4rem;margin-bottom:16px}
+
+  .card{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:20px 22px;margin-bottom:14px;
+  }
+  .card h3{font-size:1.05rem}
+  .card .meta{color:var(--muted);font-size:.9rem;margin-bottom:6px}
+
+  .skills{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+  .skills li{
+    background:var(--accent-soft);color:var(--accent);
+    padding:5px 14px;border-radius:999px;font-weight:600;font-size:.9rem;
+  }
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .grid .card{margin-bottom:0}
+
+  footer{margin-top:56px;color:var(--muted);font-size:.85rem;text-align:center}
+
+  @media (max-width:600px){
+    header{grid-template-columns:1fr;text-align:center;justify-items:center}
+    .links{justify-content:center}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ส่วนหัว: แก้ชื่อ ตำแหน่ง และคำแนะนำตัว -->
+  <header>
+    <!-- ใส่รูปจริง: <img class="avatar" src="photo.jpg" alt="รูปโปรไฟล์"> -->
+    <div class="avatar" aria-hidden="true">ชน</div>
+    <div>
+      <h1>ชื่อ นามสกุล</h1>
+      <p class="role">นักพัฒนาเว็บ / นักศึกษา / อาชีพของคุณ</p>
+      <p class="bio">Test จักรพันธ์</p>
+      <nav class="links" aria-label="ช่องทางติดต่อ">
+        <a href="mailto:you@example.com">อีเมล</a>
+        <a href="https://github.com/ชื่อผู้ใช้" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ชื่อผู้ใช้" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="tel:+66800000000">โทร</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- เกี่ยวกับฉัน -->
+  <section id="about">
+    <h2>เกี่ยวกับฉัน</h2>
+    <div class="card">
+      <p>จบแน่แก้ก่อน</p>
+    </div>
+  </section>
+
+  <!-- ทักษะ -->
+  <section id="skills">
+    <h2>ทักษะ</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git</li>
+      <li>การสื่อสาร</li>
+    </ul>
+  </section>
+
+  <!-- ประสบการณ์ / การศึกษา -->
+  <section id="experience">
+    <h2>ประสบการณ์และการศึกษา</h2>
+    <div class="card">
+      <h3>ตำแหน่งงาน หรือ ชื่อหลักสูตร</h3>
+      <p class="meta">ชื่อบริษัท / สถาบัน · 2023 – ปัจจุบัน</p>
+      <p>อธิบายสิ่งที่คุณทำและผลลัพธ์ที่ได้</p>
+    </div>
+    <div class="card">
+      <h3>ตำแหน่งงาน หรือ ชื่อหลักสูตร</h3>
+      <p class="meta">ชื่อบริษัท / สถาบัน · 2020 – 2023</p>
+      <p>อธิบายสิ่งที่คุณทำและผลลัพธ์ที่ได้</p>
+    </div>
+  </section>
+
+  <!-- ผลงาน -->
+  <section id="projects">
+    <h2>ผลงาน</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>ชื่อโปรเจกต์ 1</h3>
+        <p>อธิบายสั้น ๆ ว่าโปรเจกต์นี้ทำอะไร</p>
+        <p><a href="https://github.com/ชื่อผู้ใช้/โปรเจกต์1" target="_blank" rel="noopener">ดูโค้ด</a></p>
+      </div>
+      <div class="card">
+        <h3>ชื่อโปรเจกต์ 2</h3>
+        <p>อธิบายสั้น ๆ ว่าโปรเจกต์นี้ทำอะไร</p>
+        <p><a href="https://github.com/ชื่อผู้ใช้/โปรเจกต์2" target="_blank" rel="noopener">ดูโค้ด</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> ชื่อ นามสกุล</p>
+  </footer>
+</div>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
